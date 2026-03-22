@@ -1,0 +1,60 @@
+<div
+  class="c-remote-entry flex flex-col gap-6 max-w-5xl mx-auto p-4 md:p-6"
+  data-testid="remote-b-main"
+>
+  <header
+    class="c-remote-entry__header rounded-xl p-8 text-center"
+    style="background-color: #d1e9f0"
+  >
+    <h1 class="c-remote-entry__title text-4xl font-bold text-slate-800 mb-4">
+      Angular Nx (multi-repo) Micro-frontend App nxdmfmf-remote-<span class="text-green-500">b</span>
+    </h1>
+    <p class="c-remote-entry__source text-lg text-slate-600 leading-relaxed">
+      This page is loaded from repo: multirepo-nx-mf-dyn-modfed-rem-b workspace:
+      nxdmfmf-remoce-b-workspace app: nxdmfmf-remote-<span class="text-green-500">b</span>
+    </p>
+    <p class="text-base text-slate-600 mt-2">Last update date: {{ lastUpdate }}</p>
+  </header>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <section
+      class="c-remote-entry__card rounded-xl p-8"
+      style="background-color: #d1e9f0"
+    >
+      <h2 class="text-xl font-bold text-slate-800 mb-4">Remote B Overview</h2>
+      <p class="text-base text-slate-800 leading-relaxed">
+        This is an independent microfrontend application that can be developed,
+        tested, and deployed separately from the host application and other
+        remotes.
+      </p>
+    </section>
+
+    <section
+      class="c-remote-entry__card rounded-xl p-8"
+      style="background-color: #d1e9f0"
+    >
+      <h2 class="text-xl font-bold text-slate-800 mb-4">Capabilities</h2>
+      <ul
+        class="list-[square] list-inside text-base text-slate-800 leading-relaxed space-y-2 marker:text-slate-800"
+      >
+        <li>Independent versioning</li>
+        <li>Separate deployment pipeline</li>
+        <li>Own routing configuration</li>
+        <li>Isolated state management</li>
+        <li>Team autonomy</li>
+      </ul>
+    </section>
+
+    <section
+      class="c-remote-entry__card rounded-xl p-8"
+      style="background-color: #d1e9f0"
+    >
+      <h2 class="text-xl font-bold text-slate-800 mb-4">Integration</h2>
+      <p class="text-base text-slate-800 leading-relaxed">
+        This remote is dynamically loaded by the host application using Dynamic
+        Module Federation. The integration is seamless and transparent to the
+        end user.
+      </p>
+    </section>
+  </div>
+</div>
