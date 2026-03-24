@@ -19,6 +19,11 @@
           {
             "glob": "**/*",
             "input": "apps/nxdmfmf-remote-b/public"
+          },
+          {
+            "glob": "404.html",
+            "input": "apps/nxdmfmf-remote-b/src",
+            "output": "/"
           }
         ],
         "styles": ["apps/nxdmfmf-remote-b/src/styles.css"],
@@ -61,6 +66,26 @@
           "outputHashing": "all",
           "customWebpackConfig": {
             "path": "apps/nxdmfmf-remote-b/webpack.config.ts"
+          }
+        },
+        "gh-pages": {
+          "baseHref": "/multirepo-nx-mf-dyn-modfed-rem-b/",
+          "deployUrl": "/multirepo-nx-mf-dyn-modfed-rem-b/",
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
+            }
+          ],
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "apps/nxdmfmf-remote-b/webpack.gh-pages.config.ts"
           }
         }
       },
