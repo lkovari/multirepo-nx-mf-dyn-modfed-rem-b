@@ -26,7 +26,10 @@
             "output": "/"
           }
         ],
-        "styles": ["apps/nxdmfmf-remote-b/src/styles.css"],
+        "styles": [
+          "primeicons/primeicons.css",
+          "apps/nxdmfmf-remote-b/src/styles.css"
+        ],
         "customWebpackConfig": {
           "path": "apps/nxdmfmf-remote-b/webpack.config.ts"
         }
